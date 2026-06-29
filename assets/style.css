@@ -2,6 +2,8 @@
 html {
   position: relative;
   overflow-x: hidden !important;
+  /* Mencegah browser melakukan force dark mode otomatis */
+  color-scheme: light;
 }
 
 * {
@@ -10,7 +12,7 @@ html {
 
 body {
   font-family: 'Quicksand', sans-serif;
-  color: #324e63;
+  color: #324e63 !important; /* Dikunci agar teks tidak ikutan berubah putih */
 }
 
 a, a:hover {
@@ -50,7 +52,7 @@ a, a:hover {
   min-height: 460px;
   margin: auto;
   box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);
-  background: #fff;
+  background: #ffffff !important; /* Dikunci agar background card tetap putih bersih */
   border-radius: 12px;
   max-width: 700px;
   position: relative;
@@ -436,4 +438,4 @@ a, a:hover {
   background: rgba(22, 33, 72, 0.35);
   border-radius: 12px;
   transition: all .3s;
-}
+  }
